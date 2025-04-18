@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style></style>
+  </head>
+  <body>
+    
+    <script>
+        // Math.random() : 0~1 사이의 난수 생성
+        console.log(Math.random()*10)
+        console.log(Math.random())
+        console.log(Math.random())
+        console.log(Math.random())
+
+        // Math.floor(x) : x보다 작거나 같은 수 중에서 가장 큰 정수를 반환/내림
+        console.log(Math.floor(4.002))
+        console.log(Math.floor(54.002))
+        console.log(Math.floor(-4.002))
+
+        console.log(Math.floor(Math.random()*10))
+
+        function rolldice(){
+          return Math.floor(Math.random()*6)+1;
+        }
+        console.log(rolldice())
+
+        // Math.ceil(x) : 크거나 같은 수 중에서 가장 작은 정수를 반환/올림
+        console.log(Math.ceil(4.69)) 
+        console.log(Math.ceil(45.69))
+        console.log(Math.ceil(-4.2))
+
+        // Math.pow(x,y) : x의 y제곱을 반환
+        console.log(Math.pow(2,6))
+        console.log(Math.pow(6,3))
+
+        // Math.abs(x) : x의 절대값 반환
+        console.log(Math.abs(3.6))
+        console.log(Math.abs(-3.6))
+
+        // Math.round(x) : x를 가장 가까운 정수로 반올림
+        console.log(Math.round(3.6))
+        console.log(Math.round(3.2))
+
+        // Math.trunc(x) : x의 소수점을 제거하고 정수 부분만 반환
+        console.log(Math.trunc(3.5))
+        console.log(Math.trunc(2.1))
+        console.log(Math.trunc(-2.6))
+
+        // Math.max/min() : 전달한 값 중 가장 큰/작은 수 반환
+        console.log(Math.max(2,6,42,100,23))
+        console.log(Math.min(4,35,188,2,1,-2))
+
+        // Math.sqrt(x) : x의 제곱근 반환
+        console.log(Math.sqrt(3))
+        console.log(Math.sqrt(4))
+
+        // Math.cbrt(x) : x의 세제곱근 반환
+        console.log(Math.cbrt(8))
+        console.log(Math.cbrt(3))
+    </script>
+  </body>
+</html>
