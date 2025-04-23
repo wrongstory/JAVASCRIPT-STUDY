@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+    <style></style>
+  </head>
+  <body>
+    
+    <script>
+        // 1. 장바구니 목록 출력
+        // ['사과', '바나나', '딸기']
+        let fruit = ['사과', '바나나', '딸기'];
+        console.log(fruit);
+
+        // 2. 두 번째 상품을 변경
+        fruit[1] = '오렌지';
+        console.log(fruit);
+
+        // 3. 장바구니가 비어 있는지 확인
+        if(fruit.length === 0) {
+            console.log("장바구니가 비어있습니다.");
+        }
+        else console.log("장바구니에 상품이 있습니다.");
+
+        // 4. 특정 상품의 인덱스를 찾아 출력하기
+        const product = console.prompt("찾으시는 상품을 입력해주세요.");
+        let index = fruit.indexOf(product);
+        console.log(`${product}는 장바구니의 ${index+1}번 위치에 있습니다.`);
+        
+    </script>
+  </body>
+</html>
