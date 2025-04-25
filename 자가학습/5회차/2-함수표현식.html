@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수표현식</title>
+    <style></style>
+  </head>
+  <body>
+    
+    <script>
+        // 기본형 ( 함수 선언문 )
+        function plus (x,y){
+            return x+y;
+        }
+        console.log(plus(14,3));
+
+        // 여기서 부터는 ( 함수 표현식 )
+        // 변수형
+        let sum = function addNum1Num2(num1, num2){
+            return num1+num2;
+        }
+        console.log(sum(1,5));
+       // console.addNum1Num2(1,5);   // 오류 발생. 함수 내에서만 유효!
+
+        // 함수명 생략
+        let min = function(x,y){
+            return x-y;
+        }
+        console.log(min(14,2));
+
+        // 화살표 함수
+        const adds = (x,y) => x+y;
+        console.log(adds(34,12));
+    </script>
+  </body>
+</html>

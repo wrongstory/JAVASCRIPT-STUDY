@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수</title>
+    <style></style>
+  </head>
+  <body>
+
+    <script>
+        // 전달인자가 매개변수 보다 많거나 적은 경우. 무시된다.
+        // 많은 경우.
+        function printName(name){
+            console.log("이름: ",name);
+        }
+
+        printName("지민", "민수", "수빈");
+        // 지민만 입력되고 민수 수빈은 무시됨
+
+        // 적은 경우.
+        function printFullName(x,y){
+            console.log("성 :", y);
+        }
+        printFullName("지민");
+        // x 입력 되었으나 y 누락됨. 자동으로 y에 undefined 할당 
+
+        // 매개변수에 값이 입력되지 않았을때를 대비하여 기본값을 설정할 수 있다.
+        function greet(name = "주인") {
+            console.log("안녕하세요, " + name + "님!");
+        }
+        greet();
+        greet("명우");
+    </script>
+  </body>
+</html>
